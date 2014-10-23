@@ -1,2 +1,2 @@
-GkoVieEnRoseCom::Application.configure do
+GkoEtsyCom::Application.configure do
 end

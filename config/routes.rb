@@ -1,3 +1,3 @@
-GkoVieEnRoseCom::Application.routes.draw do
-  mount Gko::Core::Engine, :at => "/"
+GkoEtsyCom::Application.routes.draw do
+
 end

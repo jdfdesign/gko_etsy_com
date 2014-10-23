@@ -3,7 +3,7 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-GkoVieEnRoseCom::Application.load_tasks  
+GkoEtsyCom::Application.load_tasks  
 
 
 
