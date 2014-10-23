@@ -1,0 +1,38 @@
+cd ~/Github/gko_etsy_com
+tail -f log/development.log
+
+cd ~/Github/gko_etsy_com
+tail -f log/production.log
+
+rvm use 1.8.7 --default
+cd ~/Github/gko_etsy_com
+bundle install
+rails s
+
+cd ~/Github/gko_etsy_com
+rails s
+cd ~/Github/gko_etsy_com
+RAILS_ENV=production joufdesig  
+bundle exec rake assets:precompile
+cd ~/Github/gko_etsy_com
+bundle exec rake railties:install:migrations
+bundle exec rake db:migrate
+bundle exec rake db:bootstrap
+
+bundle exec rake db:admin:create
+bundle exec rake db:load_default 
+bundle exec rake db:load
+
+cd ~/developer/workspace/gko_etsy_com
+rake jobs:work
+cd ~/developer/workspace/gko_etsy_com
+rake jobs:clear
+
+cd ~/Github/gko_etsy_com
+bundle exec rake assets:themes:precompile
+
+cd ~/Github/gko_etsy_com
+bundle exec rake db:migrate_page_content
+
+cd ~/Github/gko_etsy_com
+bundle exec rake db:unmigrate_page_content

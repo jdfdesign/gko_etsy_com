@@ -1,0 +1,6 @@
+<%
+  user = Etsy.user('user_id_or_name')
+  listing = Etsy::Listing.find_all_by_shop_id(user.shop.id)
+%>
+
+listing

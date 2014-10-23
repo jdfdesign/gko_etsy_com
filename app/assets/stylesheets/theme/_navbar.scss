@@ -1,0 +1,28 @@
+.navbar {
+  zoom: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(image_path("img-top-bg.jpeg"));
+  max-height: none;
+  min-height: 80%;
+}
+.navbar-header {
+  float: none;
+  text-align: center;
+}
+.navbar-brand {
+  padding: 0;
+  height: 100%;
+  padding: 30% 0;
+  text-align: center;
+  width: 100%;
+  img {
+    height: 40%;
+  }
+}

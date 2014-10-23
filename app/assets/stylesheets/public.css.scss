@@ -1,0 +1,212 @@
+/*
+Theme Name:         Cabourg
+Description:        Cabourg is html 5 theme to display your work and blog.
+Version:            1.0.0
+Author:             Regis Bruggheman
+Author URI:         http://oscar.com
+
+*/ 
+
+/* THEME VARIABLES
+-------------------------------------------------- */
+$brand-0: #f3ede1;//#fcf8ee;
+$brand-1: #fcf8ee;
+$brand-2: #c8c1b5;
+$brand-3: #b0a99e;
+$brand-4: #999188;
+$brand-5: #837c74;
+$brand-6: #6f6862;
+$brand-7: #5c5651;
+$brand-8: #4a4541;
+$brand-9: #3a3633;
+
+
+$th-color-lighter: $brand-0;
+$th-color-light: $brand-1;
+$th-color-medium: $brand-2;
+$th-color-dark: $brand-7; 
+$th-color-darker: $brand-9;
+$th-color-brand: #fe4444;
+/* THEME MIXINS
+-------------------------------------------------- */
+
+/* IMPORTS
+-------------------------------------------------- */
+@import "theme/variables"; 
+@import "bootstrap.3.1.1/bootstrap";
+@import "font-awesome-4.0.3/font-awesome";
+@import "theme/navbar";
+@import "theme/footer";
+@import "theme/owl.carousel";
+@import "theme/owl.theme";
+@import "theme/owl.transitions";
+
+/* FIX FOR IE DEVICE_WIDTH BUG
+-------------------------------------------------- */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+// Color for the placeholder plugin
+.placeholder {
+  color: $input-color-placeholder;
+}
+
+/* FIX FOR GMAP BUG
+-------------------------------------------------- */
+#map-canvas {
+  height: 500px;
+  img {
+    max-width: none;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+/* GLOBAL STYLE
+-------------------------------------------------- */
+// We do not want focus
+// -------------------------
+a:focus,
+.btn:focus {
+  outline: 0;
+}
+::selection {
+	background-color: #000;
+	color: #fff;
+}
+.copy-text {
+  table {
+    @extend .table;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+p {
+  //letter-spacing: 1px;
+}
+
+
+/* PRINT UTILITIES
+-------------------------------------------------- */
+.navbar, #footer, #sidebar, form {
+  @extend .hidden-print;
+}
+
+html, body {
+  height: 100%;
+}
+.th-padding-lg {
+  padding: 40px 0;
+}
+
+.th-shop-sections {
+  border-bottom: 1px solid $th-color-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  
+}
+.th-section-about {
+  color: $th-color-light;
+  zoom: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(image_path("img_bg_about.jpeg"));
+  p {
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
+
+#etsy-product {
+  padding: 40px 0;
+}
+/* THUMBNAIL
+-------------------------------------------------- */
+#etsy-images {
+  text-align: center;
+  max-width: 1140px;
+  width: 380px;
+  @include center-block;
+  
+  @media (min-width: $screen-xs-min) {
+    width: 380px;
+  }
+  @media (min-width: $screen-sm-min) {
+    width: 570px;
+  }
+  @media (min-width: $screen-md-min) {
+    width: 760px;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 1140px;
+  }
+}
+a.thumbnail {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  float: left;
+  color: $brand-primary;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  padding: 0;
+  border: 8px solid #fff;
+  background: #fff;
+  width: 186px;
+  height: 151px;
+  > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 135px;
+  }
+  h3 {
+    color: #fff;
+    @include text-overflow();
+    font-size: 14px;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  .th-price {
+    font-size: 12px;
+  }
+  .caption-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    @include opacity(0);
+    @include transition(opacity 0.35s);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #fff;
+    .caption-wrapper {
+      @include opacity(1);
+    }
+  }
+}
