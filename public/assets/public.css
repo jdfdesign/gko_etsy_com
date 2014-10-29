@@ -406,7 +406,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #5c5651;
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 39, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_scaffolding.scss */
@@ -717,42 +717,42 @@ a.bg-primary:hover {
 
 /* line 595, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .bg-success {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 598, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.bg-success:hover {
-  background-color: #e4d7bd;
+  background-color: #e6e6e6;
 }
 
 /* line 595, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .bg-info {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 598, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.bg-info:hover {
-  background-color: #e4d7bd;
+  background-color: #e6e6e6;
 }
 
 /* line 595, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .bg-warning {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 598, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.bg-warning:hover {
-  background-color: #e4d7bd;
+  background-color: #e6e6e6;
 }
 
 /* line 595, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .bg-danger {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 598, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.bg-danger:hover {
-  background-color: #e4d7bd;
+  background-color: #e6e6e6;
 }
 
 /* line 127, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_type.scss */
@@ -2157,7 +2157,7 @@ th {
 }
 /* line 56, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_tables.scss */
 .table .table, .copy-text table .table, .table .copy-text table, .copy-text .table table, .copy-text table table {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 70, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_tables.scss */
@@ -2265,13 +2265,13 @@ table th[class*="col-"] {
 .copy-text table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th,
 .copy-text table > tfoot > tr.success > th {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 462, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr.success:hover > th {
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 
 /* line 451, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -2294,13 +2294,13 @@ table th[class*="col-"] {
 .copy-text table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th,
 .copy-text table > tfoot > tr.info > th {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 462, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr.info:hover > th {
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 
 /* line 451, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -2323,13 +2323,13 @@ table th[class*="col-"] {
 .copy-text table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th,
 .copy-text table > tfoot > tr.warning > th {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 462, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 
 /* line 451, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -2352,13 +2352,13 @@ table th[class*="col-"] {
 .copy-text table > tfoot > tr.danger > td,
 .table > tfoot > tr.danger > th,
 .copy-text table > tfoot > tr.danger > th {
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 462, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 767px) {
@@ -2733,7 +2733,7 @@ select[multiple].input-lg,
 .has-success .input-group-addon {
   color: #a3c86d;
   border-color: #a3c86d;
-  background-color: #f3ede1;
+  background-color: white;
 }
 /* line 889, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .has-success .form-control-feedback {
@@ -2765,7 +2765,7 @@ select[multiple].input-lg,
 .has-warning .input-group-addon {
   color: #ff7415;
   border-color: #ff7415;
-  background-color: #f3ede1;
+  background-color: white;
 }
 /* line 889, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .has-warning .form-control-feedback {
@@ -2797,7 +2797,7 @@ select[multiple].input-lg,
 .has-error .input-group-addon {
   color: #d9534f;
   border-color: #d9534f;
-  background-color: #f3ede1;
+  background-color: white;
 }
 /* line 889, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .has-error .form-control-feedback {
@@ -5016,7 +5016,7 @@ input[type="button"].btn-block {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f3ede1;
+    border-bottom-color: white;
   }
 }
 
@@ -6008,7 +6008,7 @@ a.thumbnail.active {
 
 /* line 56, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_alerts.scss */
 .alert-success {
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #a3c86d;
   color: #a3c86d;
 }
@@ -6023,7 +6023,7 @@ a.thumbnail.active {
 
 /* line 59, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_alerts.scss */
 .alert-info {
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #7acbee;
   color: #7acbee;
 }
@@ -6038,7 +6038,7 @@ a.thumbnail.active {
 
 /* line 62, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_alerts.scss */
 .alert-warning {
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #ff7415;
   color: #ff7415;
 }
@@ -6053,7 +6053,7 @@ a.thumbnail.active {
 
 /* line 65, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_alerts.scss */
 .alert-danger {
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #d9534f;
   color: #d9534f;
 }
@@ -6280,7 +6280,7 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
 /* line 471, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .list-group-item-success {
   color: #a3c86d;
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 478, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6294,7 +6294,7 @@ a.list-group-item-success .list-group-item-heading {
 /* line 484, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-success:hover, a.list-group-item-success:focus {
   color: #a3c86d;
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 /* line 490, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus {
@@ -6306,7 +6306,7 @@ a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list
 /* line 471, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .list-group-item-info {
   color: #7acbee;
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 478, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6320,7 +6320,7 @@ a.list-group-item-info .list-group-item-heading {
 /* line 484, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-info:hover, a.list-group-item-info:focus {
   color: #7acbee;
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 /* line 490, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus {
@@ -6332,7 +6332,7 @@ a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group
 /* line 471, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .list-group-item-warning {
   color: #ff7415;
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 478, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6346,7 +6346,7 @@ a.list-group-item-warning .list-group-item-heading {
 /* line 484, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-warning:hover, a.list-group-item-warning:focus {
   color: #ff7415;
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 /* line 490, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
@@ -6358,7 +6358,7 @@ a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list
 /* line 471, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .list-group-item-danger {
   color: #d9534f;
-  background-color: #f3ede1;
+  background-color: white;
 }
 
 /* line 478, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6372,7 +6372,7 @@ a.list-group-item-danger .list-group-item-heading {
 /* line 484, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-danger:hover, a.list-group-item-danger:focus {
   color: #d9534f;
-  background-color: #ece2cf;
+  background-color: #f2f2f2;
 }
 /* line 490, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
@@ -6717,7 +6717,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 409, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .panel-success > .panel-heading {
   color: #a3c86d;
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #a3c86d;
 }
 /* line 414, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6736,7 +6736,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 409, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .panel-info > .panel-heading {
   color: #7acbee;
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #7acbee;
 }
 /* line 414, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6755,7 +6755,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 409, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .panel-warning > .panel-heading {
   color: #ff7415;
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #ff7415;
 }
 /* line 414, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -6774,7 +6774,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 409, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
 .panel-danger > .panel-heading {
   color: #d9534f;
-  background-color: #f3ede1;
+  background-color: white;
   border-color: #d9534f;
 }
 /* line 414, ../../app/assets/stylesheets/bootstrap.3.1.1/bootstrap/_mixins.scss */
@@ -9891,7 +9891,7 @@ button.close {
 }
 /* line 14, ../../app/assets/stylesheets/theme/_footer.scss */
 #footer .nav > li > a {
-  color: #f3ede1;
+  color: white;
 }
 /* line 16, ../../app/assets/stylesheets/theme/_footer.scss */
 #footer .nav > li > a:hover {
@@ -9900,7 +9900,7 @@ button.close {
 }
 /* line 23, ../../app/assets/stylesheets/theme/_footer.scss */
 #footer h4 {
-  color: #f3ede1;
+  color: white;
   margin-top: 80px;
   border-bottom: 3px solid #fff;
   text-transform: uppercase;
@@ -10477,107 +10477,103 @@ html, body {
   padding: 40px 0;
 }
 
+/* line 138, ../../app/assets/stylesheets/public.css.scss */
+.owl-item img {
+  max-width: 100%;
+}
+
 /* THUMBNAIL
 -------------------------------------------------- */
-/* line 138, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 #etsy-images {
   text-align: center;
-  max-width: 1140px;
-  width: 380px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-@media (min-width: 480px) {
-  /* line 138, ../../app/assets/stylesheets/public.css.scss */
-  #etsy-images {
-    width: 380px;
-  }
-}
-@media (min-width: 768px) {
-  /* line 138, ../../app/assets/stylesheets/public.css.scss */
-  #etsy-images {
-    width: 570px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 138, ../../app/assets/stylesheets/public.css.scss */
-  #etsy-images {
-    width: 760px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 138, ../../app/assets/stylesheets/public.css.scss */
-  #etsy-images {
-    width: 1140px;
-  }
+  /* @media (min-width: $screen-xs-min) {
+     width: 380px;
+   }
+   @media (min-width: $screen-sm-min) {
+     width: 570px;
+   }
+   @media (min-width: $screen-md-min) {
+     width: 760px;
+   }
+   @media (min-width: $screen-lg-min) {
+     width: 1140px;
+   }*/
 }
 
-/* line 157, ../../app/assets/stylesheets/public.css.scss */
+/* line 163, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  float: left;
   color: #fe4444;
-  position: relative;
-  overflow: hidden;
   text-align: left;
   padding: 0;
-  border: 8px solid #fff;
+  margin: 0;
   background: #fff;
-  width: 186px;
-  height: 151px;
+  height: 400px;
+  overflow: hidden;
 }
-/* line 174, ../../app/assets/stylesheets/public.css.scss */
+/* line 182, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail > img {
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 170px;
-  height: 135px;
-}
-/* line 183, ../../app/assets/stylesheets/public.css.scss */
-a.thumbnail h3 {
-  color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 14px;
-  margin: 0;
 }
 /* line 189, ../../app/assets/stylesheets/public.css.scss */
-a.thumbnail p {
+a.thumbnail h3 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  max-width: 70%;
   margin: 0;
 }
-/* line 192, ../../app/assets/stylesheets/public.css.scss */
+/* line 197, ../../app/assets/stylesheets/public.css.scss */
+a.thumbnail p {
+  margin: 0;
+  color: #fff;
+}
+/* line 201, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail .th-price {
   font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
 }
-/* line 195, ../../app/assets/stylesheets/public.css.scss */
+/* line 206, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail .caption-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-/* line 207, ../../app/assets/stylesheets/public.css.scss */
+/* line 219, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
   border-color: #fff;
 }
-/* line 209, ../../app/assets/stylesheets/public.css.scss */
+/* line 221, ../../app/assets/stylesheets/public.css.scss */
 a.thumbnail:hover .caption-wrapper, a.thumbnail:focus .caption-wrapper, a.thumbnail:active .caption-wrapper {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+/* line 228, ../../app/assets/stylesheets/public.css.scss */
+.background-image-holder,
+.foreground-image-holder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  z-index: 0;
+  background-position: 50% 50% !important;
 }

@@ -1,5 +1,7 @@
 //= require jquery.cookie
+//= require jquery.easing.js
 //= require owl.carousel.js
+
 (function($){
   $(document).ready(function() {
     var api_key = "y4g5v9q3ejafxl71fhrjc1o2";
@@ -20,8 +22,7 @@
     function addToCard(listing_id) {
       console.log("guest_id " + guest_id)
       url = etsy_url + "/guests/" + guest_id + "/carts.js?listing_id=" + listing_id + "&api_key=" + api_key;
-      
-    
+
       $.ajax({
         url: url,
         type: 'POST',
@@ -126,7 +127,7 @@
     
     //======================================================
     function getListing() {
-
+      console.log("getListing")
       url = etsy_url + "/shops/tresorsdestbarth/listings/active.js?" +
                 "language=fr&fields=listing_id,title,price,description,quantity,url,currency_code,shop_section_id&includes=Images,MainImage&api_key=" + api_key;
 
@@ -147,9 +148,9 @@
             if (data.count > 0) {
               $.each(data.results, function(i, item) {
                console.log(item)
-               $("<a class='thumbnail' href='"+ item.url + "' data-listing-id='" + item.listing_id + "' data-shop-section-id='" + item.shop_section_id + "'>" + 
-               "<img src='" + item.MainImage.url_170x135 + "'/>" +
-               "<div class='caption-wrapper'><div class='caption'><h3>" + item.title + "</h3><p>&rarr;</p><p class='th-price'>" + item.currency_code + " " + item.price + "</p></div></div></a>").appendTo("#etsy-images")
+               $("<div class='col-md-6'><a class='thumbnail' href='"+ item.url + "' data-listing-id='" + item.listing_id + "' data-shop-section-id='" + item.shop_section_id + "'>" + 
+               "<div class='background-image-holder'><img src='" + item.MainImage.url_570xN + "'/></div>" +
+               "<div class='caption-wrapper'><div class='caption'><h3>" + item.title + "</h3><p>&rarr;</p><p class='th-price'>" + item.currency_code + " " + item.price + "</p></div></div></a></div>").appendTo("#etsy-images")
               });
             } else {
               $('<p>No results.</p>').appendTo('#etsy-images');
@@ -158,6 +159,15 @@
             $('#etsy-images').empty();
             alert(data.error);
           }
+          
+          // Append .background-image-holder <img>'s as CSS backgrounds
+
+          $('.background-image-holder').each(function() {
+            var imgSrc = $(this).children('img').attr('src');
+            $(this).css('background', 'url("' + imgSrc + '")');
+            $(this).children('img').hide();
+            $(this).css('background-position', '50% 0%');
+          });
 
           $("a.thumbnail").on("click", function(e) {
             e.preventDefault();
@@ -192,18 +202,24 @@
       $('#product-price').html(data.price);
       $('#product-description').html(data.description);
       //
-      var c = $(".owl-wrapper");
-      c.empty();
+      var carousel = $("#product-images");
+      var content = "";
+      if(typeof carousel.data('owlCarousel') == "undefined") {
+        carousel.empty();
+      } else {
+        carousel.data('owlCarousel').destroy();
+      }
+
       $.each(data.Images, function(i, item) {
-        $("<div class='item'><img src=" + item.url_570xN + "/></div>").appendTo(c);
+        content += "<img src='" + item.url_fullxfull + "'/>";
       });
-      
-      $(".js-owl-carousel").owlCarousel({
+      carousel.html(content);
+      carousel.owlCarousel({
         navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
         autoHeight : true,
-        singleItem:true
+        singleItem: true
         // "singleItem:true" is a shortcut for:
         // items : 1, 
         // itemsDesktop : false,
@@ -211,13 +227,16 @@
         // itemsTablet: false,
         // itemsMobile : false
       });
+      $('body, html').animate({ scrollTop: $(".navbar-header").height() }, 1500, 'easeOutExpo' );
     }
     
-    console.log(etsy_date);
-    console.log(guest_id);
-    console.log(checkout_url);
+    //console.log(etsy_date);
+    //console.log(guest_id);
+    //console.log(checkout_url);
     getListing();
     getSections();
     getGuest();
+    
+
 })
 })(jQuery);
